@@ -1,0 +1,21 @@
+body {
+    background  :   #0070C0;
+}
+
+#actions {
+    border: 2px solid yellow;
+    width: 500px;
+    overflow: auto;
+    height: 200px;
+}
+
+#actions li {
+    border-bottom: 1px solid white;
+    list-style: none;
+}
+
+#textBox textarea {
+    margin-left : 0px;
+    min-width : 498px;
+    max-width : 498px;
+}

@@ -1,0 +1,15 @@
+{
+  "debug": true,
+  "protocol": "http",
+  "remoteHost": "api.nodejitsu.com",
+  "loglength": 110,
+  "userconfig": ".jitsuconf",
+  "loglevel": "info",
+  "tmproot": "/tmp",
+  "tar": "tar",
+  "colors": true,
+  "analyze": true,
+  "gzipbin": "gzip",
+  "username": "mnaon",
+  "password": "Gallettus"
+}
