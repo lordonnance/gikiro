@@ -105,7 +105,7 @@ $(document).ready(function () {
   
   console.log("Document Ready !");
 
-  socket = new io.Socket("http://apeyes.nodejitsu.com");
+  socket = new io.Socket("http://apeyes.nodejitsu.com", {port: 80});
   socket.connect();
   socket.on('message', function(msg){msgReceived(msg)});
   
