@@ -5,6 +5,19 @@ app.listen(80);
 
 // var socket = require('./node_modules/socket.io/lib/socket.io').listen(app);
 var socket = require('socket.io').listen(app);
+
+socket.configure('production', function(){
+  socket.enable('browser client etag');
+  socket.set('log level', 1);
+
+  socket.set('transports', [
+    'websocket'
+  , 'htmlfile'
+  , 'xhr-polling'
+  , 'jsonp-polling'
+  ]);
+});
+
 // require('./node_modules/jade/lib/jade.js');
 require('jade');
 
