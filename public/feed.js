@@ -60,8 +60,8 @@ function addSource(elem, path) {
 // KEYBOARD FUNCTIONS
 
 function keyReaction(sound) {
-    writeAction("You ", "play", sound);
     playSound(sound);
+    writeAction("You ", "play", sound);
     sendData(sound, "play");
 }
 
